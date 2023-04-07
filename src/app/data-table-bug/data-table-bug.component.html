@@ -1,0 +1,7 @@
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger"
+       class="table display responsive nowrap" style="width:100%">
+</table>
+
+<ng-template #demoNg let-data="adtData" let-emitter="captureEvents">
+  <app-demo-ng-template-ref [data]="data" (emitter)="emitter($event)"></app-demo-ng-template-ref>
+</ng-template>
